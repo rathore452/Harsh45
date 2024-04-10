@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>                            
+  <title>Schedule quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="flex">
+  <div class="w-64  bg-blue-300 border-r-2 ">
+  <div class="flex  items-center pt-5  h-17  w-72">
+    <div>
+    <img src="gk.jpg" class="h-12 rounded-3xl w-12 ml-2 hover:scale-125">
+  </div
+  >
+     <div>
+  <h1 class=" text-3xl font-bold text-black px-3 ">
+  Gurukul ERP</h1>
+</div>
+</div>
+
+<div>
+    <ul>
+    <div><li class="py-3 px-10 mt-7 text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-home  fa-x pr-3 " aria-hidden="true"></i>
+<a href="index.html">Dashboard</a></li> </div>
+    <div> <li class="py-3  pr-8 px-10 pt-4 text-xl   font-semibold hover:bg-blue-100"> <i class="fa fa-graduation-cap  pr-2 " aria-hidden="true"></i><a href="#">Admission</a></li></div>
+      <div><li class="py-3 pr-6 pt-4 px-10   text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-male fa-x pr-3" aria-hidden="true"></i><a href="#" class="pl-3">Students</a></li></div>
+    
+    <div> <li class=" pl-10 py-3 pt-4 text-xl font-semibold hover:bg-blue-100"><i class="fa fa-credit-card pr-3" aria-hidden="true"></i><a href="#">Fees & Payments</a></li></div>
+    <div> <li class="py-3  pr-8  pt-4 text-xl px-10 font-semibold hover:bg-blue-100"><a href="#"> <i class="fa fa-book pr-3" aria-hidden="true"></i>Time Table</a></li></div>
+      <div><div class="flex justify-between items-center px-3  hover:bg-blue-100 hover:dropdown " onclick="dropdown()" >
+                        <div >
+                            <li class="  py-4  items-center font-medium rounded-bl-md"><a class="flex items-center" href="#"
+                                    target="_blank">
+                                    <div><img src="icon2.png" class="h-10 w-12 ml-3"></div>
+                                    <div colass="flex w-full items-center ml-1  "><span class="text-xl font-semibold">Quiz</span>
+                                    </div>
+                                </a>
+                        </div>
+                        <span class="text-sm rotate-180" id="arrow"><i class="fa fa-angle-down"></i></span>
+                        </li>
+                    </div>
+                    <div class="text-sm text-left font-thin mt-2 w-4/5 mx-auto" id="submenu">
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9" >  <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a  href="add question.html" target="_blank">Add Question</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9"> <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a href="question.html"  target="_blank"> Question list</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9"> <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a  href="create quiz.html"  target="_blank">Create Quiz</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9"> <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a   href="Schedule quiz.html"  target="_blank">  Schudule quiz
+                       </a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9"> <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a href="start.html"  target="_blank">Start quiz</a></h1>
+                       <script type="text/javascript">
+                function dropdown(){
+                    document.querySelector('#submenu').classList.toggle('hidden');
+                    document.querySelector('#arrow').classList.toggle('rotate-0');
+                }
+                 dropdown()
+            </script>
+                        </div>
+                      </div>
+      </li>
+      <div> <li class="px-10 py-3 pr-20 pt-4 text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-pencil-square-o pr-3" aria-hidden="true"></i><a href="#">Results</a></li></div>
+    
+    <div> <li class="px-10 py-3 pr-8 pt-4 text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-users pr-3" aria-hidden="true"></i><a href="#">Departments</a></li></div>
+    <div> <li class="px-10 py-3 pr-6 pt-4 text-xl font-semibold hover:bg-blue-100"><i class="fa fa-commenting-o pr-3" aria-hidden="true"></i><a href="#">Notifications</a></li></div>
+      <div><li class="px-10 pr-20 py-3 pt-4 text-xl font-semibold hover:bg-blue-100"><i class="fa fa-cog pr-3" aria-hidden="true"></i><a href="#">Settings</a></li></div>
+    </ul>
+    </div>
+    </div>
+    <main class="bg-purple-300 h-screen w-screen">
+      <div class="h-[600px] w-[930px]    m-8 ">
+
+    <div class= "flex ml-16 mt-10">
+    <div class="font-semibold text-4xl  ">Schedule Quiz </div>
+    <div>
+      <form>
+         <select name="Subject" class=" w-72 h-10 border-2 border border-black ml-32 bg-gray-200"> 
+             <option>Search Quiz</option>
+            <option>Technology Quiz</option> 
+
+            <option>Student Quiz</option> 
+
+            <option>Academic Quiz</option> 
+           <option>Sports Quiz</option>
+           <option>colleage Quiz</option>
+    </select>
+    <button class="h-10 w-24 border- bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mt-1">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="max-w-4xl  mx-auto mt-10 justify-center text-center m-6  ">
+
+                <!-- Table -->
+                <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                  <!-- Table Header -->
+                  <thead class="bg-gray-800 text-white">
+                    <tr>
+                      <th class="px-2  py-2">Quiz name</th>
+                      <th class="px-4 py-2">Class</th>
+                      <th class="px-4 py-2">Subject</th>
+                      <th class="px-4 py-2">Date</th>
+                      <th class="px-4 py-2">Schedule</th>
+                      
+                    </tr>
+                  </thead>
+                  <!-- Table Body -->
+                  <tbody class="divide-y divide-gray-200 ">
+                    <tr>
+                      <td class="px-4 py-2">Brain Blast GK Challenge </td>
+                      <td class="px-4 py-2">10th</td>
+                      <td class="px-4 py-2">English</td>
+                      <td class="px-4 py-2">1/02/2024</td>
+                  
+                      <td> <button type="button" class="px-4 py-2 ">Save</button></td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-2">WhizWizard Showdown</td>
+                      <td class="px-4 py-2">12th</td>
+                      <td class="px-4 py-2">Physics</td>
+                    
+                      <td class="px-4 py-2">2/02/2024</td>
+                      <td> <button type="button" class="px-4 py-2">Save</button></td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-2">Intellect Quest</td>
+                      <td class="px-4 py-2">12th</td>
+                      <td class="px-4 py-2">chemistry</td>
+                      <td class="px-4 py-2">5/02/2024</td>
+                    
+                      <td> <button type="button" class="px-4 py-2">Save</button></td>
+                      </tr>
+                    <tr>
+                        <td class="px-4 py-2">History Quiz</td>
+                        <td class="px-4 py-2">11th</td>
+                        <td class="px-4 py-2">PCM</td>
+                        <td class="px-4 py-2">10/02/2024</td>
+                        
+                        <td> <button type="button" class="px-4 py-2">Save</button></td>
+                      </tr>
+                      <tr>
+                        <td class="px-4 py-2">Music Quiz</td>
+                        <td class="px-4 py-2">9th</td>
+                        <td class="px-4 py-2">Music</td>
+                        <td class="px-4 py-2">12/02/2024</td>
+                        
+                      <td> <button type="button" class="px-4 py-2">Save</button></td>
+                      </tr>
+                      <tr>
+                        <td class="px-4 py-2">Pub Quiz </td>
+                        <td class="px-4 py-2">12th</td>
+                        <td class="px-4 py-2">Maths</td>
+                        <td class="px-4 py-2">15/02/2024</td>
+                      
+                      <td> <button type="button" class="px-4 py-2">Save</button></td>
+                      </tr>
+                      <tr>
+                        <td class="px-4 py-2">Academic Quiz</td>
+                        <td class="px-4 py-2">10th</td>
+                        <td class="px-4 py-2">Hindi</td>
+                        <td class="px-4 py-2">24/02/2024</td>
+                        
+                      <td> <button type="button" class="px-4 py-2">Save</button></td>
+                      </tr>
+                      <tr>
+                        <td class="px-4 py-2">Sports Quiz</td>
+                        <td class="px-4 py-2">12th</td>
+                        <td class="px-4 py-2">PT</td>
+                        <td class="px-4 py-2">03/03/2024</td>
+                        
+                      <td> <button type="button" class="px-4 py-2">Save</button></td>
+                      </tr>
+                      <tr>
+                        <td class="px-4 py-2">Technology Quiz</td>
+                        <td class="px-4 py-2">12th</td>
+                        <td class="px-4 py-2">Computer</td>
+                        <td class="px-4 py-2">10/03/2024</td>
+                        
+                      <td> <button type="button" class="px-4 py-2">Save</button></td>
+                      </tr>
+                  </tbody>
+                </table>
+              
+            </div>
+      </div>
+</main>
+  </div>
+  </body>
+  </html>

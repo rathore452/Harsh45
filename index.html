@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>                            
+  <title>Gurukul ERP</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+	<div class="flex">
+	<div class="w-64  bg-blue-300 border-r-2 ">
+	<div class="flex  items-center pt-5  h-17  w-72">
+		<div>
+		<img src="gk.jpg" class="h-12 rounded-3xl w-12 ml-2 hover:scale-125">
+  </div
+  >
+     <div>
+  <h1 class=" text-3xl font-bold text-black px-3 ">
+  Gurukul ERP</h1>
+</div>
+</div>
+
+<div>
+  	<ul>
+  	<div><li class="py-3 px-10 mt-7 text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-home  fa-x pr-3 " aria-hidden="true"></i>
+<a href="index.html">Dashboard</a></li>	</div>
+  	<div>	<li class="py-3  pr-8 px-10 pt-4 text-xl   font-semibold hover:bg-blue-100"> <i class="fa fa-graduation-cap  pr-2 " aria-hidden="true"></i><a href="#">Admission</a></li></div>
+  		<div><li class="py-3 pr-6 pt-4 px-10   text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-male fa-x pr-3" aria-hidden="true"></i><a href="#" class="pl-3">Students</a></li></div>
+  	
+  	<div>	<li class=" pl-10 py-3 pt-4 text-xl font-semibold hover:bg-blue-100"><i class="fa fa-credit-card pr-3" aria-hidden="true"></i><a href="#">Fees & Payments</a></li></div>
+  	<div>	<li class="py-3  pr-8  pt-4 text-xl px-10 font-semibold hover:bg-blue-100"><a href="#"> <i class="fa fa-book pr-3" aria-hidden="true"></i>Time Table</a></li></div>
+  		<div><div class="flex justify-between items-center px-3  hover:bg-blue-100 hover:dropdown " onclick="dropdown()" >
+                        <div >
+                            <li class="  py-4  items-center font-medium rounded-bl-md"><a class="flex items-center" href="#"
+                                    target="_blank">
+                                    <div><img src="icon2.png" class="h-10 w-12 ml-3"></div>
+                                    <div colass="flex w-full items-center ml-1  "><span class="text-xl font-semibold">Quiz</span>
+                                    </div>
+                                </a>
+                        </div>
+                        <span class="text-sm rotate-180" id="arrow"><i class="fa fa-angle-down"></i></span>
+                        </li>
+                    </div>
+                    <div class="text-sm text-left font-thin mt-2 w-4/5 mx-auto" id="submenu">
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9" >  <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a  href="add question.html" target="_blank">Add Question</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9"> <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a href="question.html"  target="_blank"> Question list</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9"> <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a  href="create quiz.html"  target="_blank">Create Quiz</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9"> <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a   href="Schedule quiz.html"  target="_blank">  Schudule quiz
+                       </a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9"> <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a href="start.html"  target="_blank">Start quiz</a></h1>
+                       <script type="text/javascript">
+                function dropdown(){
+                    document.querySelector('#submenu').classList.toggle('hidden');
+                    document.querySelector('#arrow').classList.toggle('rotate-0');
+                }
+                dropdown()
+            </script>
+                        </div>
+                      </div>
+      </li>
+  	  <div>	<li class="px-10 py-3 pr-20 pt-4 text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-pencil-square-o pr-3" aria-hidden="true"></i><a href="#">Results</a></li></div>
+  	
+  	<div>	<li class="px-10 py-3 pr-8 pt-4 text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-users pr-3" aria-hidden="true"></i><a href="#">Departments</a></li></div>
+  	<div>	<li class="px-10 py-3 pr-6 pt-4 text-xl font-semibold hover:bg-blue-100"><i class="fa fa-commenting-o pr-3" aria-hidden="true"></i><a href="#">Notifications</a></li></div>
+  		<div><li class="px-10 pr-20 py-3 pt-4 text-xl font-semibold hover:bg-blue-100"><i class="fa fa-cog pr-3" aria-hidden="true"></i><a href="#">Settings</a></li></div>
+  	</ul>
+  	</div>
+  	</div>
+    <div>
+    <div class="flex justify-between ml-10 mt-5  ">
+      <div>
+        <i class="fa fa-bars    fa-2x mt-1" aria-hidden="true"></i>
+
+      </div>
+  	<div>
+  	<input type="search" class="  border border-black w-[780px]  h-[40px] rounded-xl  ml-2 pl-2 " name="" placeholder="search">	
+  	</div>
+    <div class="relative inline-block ml-3">
+  <!-- Trigger element -->
+  <div class="flex items-center space-x- ml-3" id="profileTrigger">
+    <img src="icon.jpg" alt="Profile Image" class="w-10 h-10 rounded-full mb-1">
+    <span class="text-gray-800"></span>
+  </div>
+  
+  <!-- Profile popover -->
+  <div class="hidden absolute z-10 -mt-3 p-2 bg-white shadow-md rounded-md" id="profilePopover">
+    <div class="text-gray-800">change user</div>
+    <div class="text-gray-500">help</div>
+    <div class="text-gray-500">Log out</div>
+    <!-- Additional profile information -->
+  </div>
+</div>
+
+<script>
+  const profileTrigger = document.getElementById('profileTrigger');
+  const profilePopover = document.getElementById('profilePopover');
+
+  // Event listener for mouse enter to show profile popover
+  profileTrigger.addEventListener('mouseenter', () => {
+    profilePopover.classList.remove('hidden');
+  });
+
+  // Event listener for mouse leave to hide profile popover
+  profileTrigger.addEventListener('mouseleave', () => {
+    profilePopover.classList.add('hidden');
+  });
+</script>
+  </div>
+  <div class="flex mt-10">
+  <div class="ml-14 ">
+    <img  class="w-10 h-10"src="ajay.png">
+  </div>
+  <div class="pl-5 text-2xl font-bold">
+    <h1>Dashboard</h1>
+  </div>
+</div>
+<div class="flex justify-center m-8 ml-16">
+<div class="w-[260px]  h-[200px] hover:scale-90  border-current bg-orange-300 hover:shadow-xl rounded-2xl  ml-7  ">
+
+  <h1 class="justify-center flex pt-10 text-white  text-2xl font-bold ">  <i class="fa fa-graduation-cap  fa-2x text-black" aria-hidden="true"></i>
+Admission</h1>
+  <h1 class="flex justify-center font-bold  pt-1 text-xl ">Total applicants: 156<br>
+       New admission: 23
+</h1>
+</div>
+<div class="w-[260px] h-[200px] ml-7  border-current  bg-yellow-300 rounded-2xl hover:scale-90 hover:shadow-xl   ">
+  <h1 class="justify-center text-white flex pt-10 text-2xl font-bold">
+  <i class="fa fa-male fa-2x pr-2 text-gray-300" aria-hidden="true"></i>Students</h1>
+  <h1 class="flex justify-center font-bold pt-1 text-xl ">Total students: 640<br>
+    Active students: 600
+</h1>
+</div>
+<div class="w-[260px] h-[200px]  ml-7 border-current hover:scale-90  bg-slate-200 rounded-2xl  hover:shadow-xl   ">
+  <h1 class="justify-center flex pt-10 text-2xl text-white font-bold">
+    <i class="fa fa-book fa-2x pr-2 text-blue-500 " aria-hidden="true"></i>Time table</h1>
+  <h1 class="flex justify-center pt-1 text-xl font-bold"> Time:10:15AM-4:30PM
+</h1>
+</div>
+</div>
+ <div class="flex mt-10">
+  <div class="ml-14 ">
+    <img  class="w-10 h-10"src="aa.png">
+  </div>
+  <div class="pl-5 text-2xl font-bold">
+    <h1>Recent Activity</h1>
+  </div>
+</div>
+<div class="flex">
+<div class=" ml-7 mt-5">
+  <div class="flex justify-between">
+  <div class="text-xl font-bold pb-3">Classes In This week</div>
+  <div class="font-bold pt-2">view all</div>
+</div>
+<div class="h-[90px] w-[500px] border- flex rounded-2xl overflow-hidden  justify-around items-center bg-blue-100 hover:shadow-xl">
+  <div><h1 class="font-bold  text-xl pl-3 pt-1 bg-blue-200 rounded-xl h-10 w-12   ">L1</h1></div>
+ <div> <h1 class=" font-bold pr-16">Diploma in web developement</h1>
+<div class="flex">
+  <div class="h-4 w-4 m-1 rounded-full bg-slate-300 "></div><div class="font-bold">
+ 9 AM-11 AM</div></div></div>
+  <div class=" text-black-200 font-bold"><h1>Mon</h1></div>
+  </div>
+  <div class="h-[90px] w-[500px] flex rounded-2xl overflow-hidden  justify-around items-center bg-orange-100  hover:shadow-xl mt-4">
+  <div><h1 class="font-bold  text-xl  pl-3 pt-1  rounded-xl h-10 w-12  bg-orange-200 ">L2</h1></div>
+ <div> <h1 class=" font-bold pr-24">Basic of computer science</h1>
+<div class="flex">
+  <div class="h-4 w-4 m-1 rounded-full bg-slate-300 "></div><div class="font-bold">
+ 2 PM-4 PM</div></div></div>
+  <div class=" text-black-200 font-bold"><h1>Tue</h1></div>
+  </div>
+  <div class="h-[90px] w-[500px] flex rounded-2xl overflow-hidden fle justify-around items-center bg-blue-100 hover:shadow-xl mt-4">
+  <div><h1 class="font-bold  text-xl  pl-3  pt-1 rounded-xl h-10 w-12  bg-blue-200 ">L3</h1></div>
+ <div> <h1 class=" font-bold pr-16">Data structure and algoritham</h1>
+<div class="flex">
+  <div class="h-4 w-4 m-1 rounded-full bg-slate-300 "></div><div class="font-bold">
+ 9 AM-11 AM</div></div></div>
+  <div class=" text-black-200 font-bold"><h1>Wed</h1></div>
+  </div>
+  <div class="h-[90px] w-[500px]  flex rounded-2xl overflow-hidden fle justify-around items-center bg-orange-100  hover:shadow-xl mt-4"> 
+  <div><h1 class="font-bold  text-xl  pl-3 pt-1 bg-orange-200   rounded-xl h-10 w-12  ">L4</h1></div>
+ <div> <h1 class=" font-bold pr-16">Analysis design of algoritham</h1>
+<div class="flex">
+  <div class="h-4 w-4 m-1 rounded-full bg-slate-300 "></div><div class="font-bold">
+ 2 PM-4 PM</div></div></div>
+  <div class=" text-black-200 font-bold"><h1>Thu</h1></div>
+  </div>
+</div>
+<div>
+  <div class="h-[500px] mt-6 w-96 border-2 ml-10 rounded-2xl  shadow-lg  bg-white border-inherit">
+    <h1 class="m-6 text-3xl font-bold">Assigned Tasks <i class="fa fa-pencil-square-o ml-3" aria-hidden="true"></i> </h1>
+    <div class="h-[85px] w-[350px] rounded-2xl border-2 m-4 bg-slate-300">
+      <div class="flex p-4">
+        <div class="h-10 w-10 rounded-full bg-gray-500 p-2 pl-3" > <i class="fa fa-calendar "aria-hidden="true"></i></div>
+        <div class="ml-2 font-bold"> Student Report system<br><p>28/12/2023</p></div>
+      </div>
+      
+    </div>
+     <div class="h-[85px] w-[350px] rounded-2xl border-2 m-4 bg-slate-300">
+      <div class="flex p-4">
+        <div class="h-10 w-10 rounded-full bg-gray-500 p-2 pl-3" > <i class="fa fa-calendar "aria-hidden="true"></i></div>
+        <div class="ml-2 font-bold"> Annual Meeting <br><p>04/01/2024</p></div>
+      </div>
+      
+    </div>
+     <div class="h-[85px] w-[350px] rounded-2xl border-2 m-4 bg-slate-300">
+      <div class="flex p-4">
+        <div class="h-10 w-10 rounded-full bg-gray-500 p-2 pl-3" > <i class="fa fa-calendar "aria-hidden="true"></i></div>
+        <div class="ml-2 font-bold">Parents Meeting <br><p>10/01/2024</p></div>
+      </div>
+      
+    </div>
+     <div class="h-[85px] w-[350px] rounded-2xl border-2 m-4 bg-slate-300">
+      <div class="flex p-4">
+        <div class="h-10 w-10 rounded-full bg-gray-500 p-2 pl-3" > <i class="fa fa-calendar "aria-hidden="true"></i></div>
+        <div class="ml-2 font-bold">Sports Meeting<br><p>28/01/2024</p></div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+  	</div>
+
+</body>
+</html>

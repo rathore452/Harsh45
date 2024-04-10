@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.10/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Add Question</title>
+</head>
+<body>
+    <div class="flex">
+  <div class="w-64 h-screen bg-blue-300 border-r-2 ">
+  <div class="flex  items-center pt-5  h-17  w-72">
+    <div>
+    <img src="gk.jpg" class="h-12 rounded-3xl w-12 ml-2 hover:scale-125">
+  </div
+  >
+     <div>
+  <h1 class=" text-3xl font-bold text-black px-3 ">
+  Gurukul ERP</h1>
+</div>
+</div>
+
+<div>
+    <ul>
+      <li class="py-3 px-10 mt-7 text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-home  fa-x pr-3 " aria-hidden="true"></i>
+<a href="index.html">Dashboard</a></li> 
+      <li class="py-3  pr-8 px-10 pt-4 text-xl   font-semibold hover:bg-blue-100"> <i class="fa fa-graduation-cap  pr-2 " aria-hidden="true"></i><a href="#">Admission</a></li>
+      <li class="py-3 pr-6 pt-4 px-10   text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-male fa-x pr-3" aria-hidden="true"></i><a href="#" class="pl-3">Students</a></li>
+    
+      <li class=" pl-10 py-3 pt-4 text-xl font-semibold hover:bg-blue-100"><i class="fa fa-credit-card pr-3" aria-hidden="true"></i><a href="#">Fees & Payments</a></li>
+      <li class="py-3  pr-8  pt-4 text-xl px-10 font-semibold hover:bg-blue-100"><a href="#"> <i class="fa fa-book pr-3" aria-hidden="true"></i>Time Table</a></li>
+      <li class=" py-3 px-10 pt-4 text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-question-circle-o pr-3" aria-hidden="true"></i><a href="#">Quiz</a></li>
+      <li class="px-10 py-3 pr-20 pt-4 text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-pencil-square-o pr-3" aria-hidden="true"></i><a href="#">Results</a></li>
+    
+      <li class="px-10 py-3 pr-8 pt-4 text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-users pr-3" aria-hidden="true"></i><a href="#">Departments</a></li>
+      <li class="px-10 py-3 pr-6 pt-4 text-xl font-semibold hover:bg-blue-100"><i class="fa fa-commenting-o pr-3" aria-hidden="true"></i><a href="#">Notifications</a></li>
+      <li class="px-10 pr-20 py-3 pt-4 text-xl font-semibold hover:bg-blue-100"><i class="fa fa-cog pr-3" aria-hidden="true"></i><a href="#">Settings</a></li>
+    </ul>
+    </div>
+    </div>
+      
+       <div class="m-10 bg-blue-200 md:w-screen rounded-md">
+        <div class="flex  m-10">
+        <div><img src="hr.png" class="h-16 w-20  "></div>
+       <div>  <h1 class="text-3xl p-4 font-semibold ">Add Questions</h1></div>
+      </div>
+        <div class="flex justify-around">
+        <div>
+            <div  class="">
+                  <form>
+         <select name="Subject" class=" w-96 h-10 border-2 border border-black  bg-white">
+
+             <option>Subject</option>
+            <option>Physics</option> 
+
+            <option>Hindi</option> 
+
+            <option>History</option> 
+           <option>Sceince</option>
+           <option>Maths</option>
+    </select>
+            </div>
+            <div class="">
+                <input type="text" name="" placeholder="Question here" class="h-64 mt-6 w-96 border-black border-2 rounded-md"> 
+           </div>
+        </div>
+        <div>
+            <div> <input type="text" name="" placeholder="Option 1" class="border-2 mb-5 border-black w-72 h-10  mt-2 rounded-lg">
+                
+            </div>
+           <div> <input type="text" name="" placeholder="Option 2" class="border-2 mb-5 border-black w-72 h-10  mt-3 rounded-lg">
+                
+            </div><div> <input type="text" name="" placeholder="Option 3" class="border-2 mb-5 border-black w-72 h-10  mt-3 rounded-lg">
+                
+            </div><div> <input type="text" name="" placeholder="Option 4" class="border-2 mb-5 border-black w-72 h-10  mt-3 rounded-lg">
+                
+            </div><div> <input type="text" name="" placeholder="Answer" class="border-2 mb-5 border-black w-72 h-10  mt-3 rounded-lg">
+                
+            </div>
+            
+        </div>
+        </div>
+      <div class=" justify-center flex mt-8">
+        
+                <form action="">
+                    <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-5  rounded-md">submit</button>
+                </form>
+            </div>
+       </div>
+      </div>
+      
+</body>
+</html>

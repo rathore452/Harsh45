@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>                            
+  <title>Start Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="flex">
+  <div class="w-64  bg-blue-300 border-r-2 ">
+  <div class="flex  items-center pt-5  h-17  w-72">
+    <div>
+    <img src="gk.jpg" class="h-12 rounded-3xl w-12 ml-2 hover:scale-125">
+  </div
+  >
+     <div>
+  <h1 class=" text-3xl font-bold text-black px-3 ">
+  Gurukul ERP</h1>
+</div>
+</div>
+
+<div>
+    <ul>
+    <div><li class="py-3 px-10 mt-7 text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-home  fa-x pr-3 " aria-hidden="true"></i>
+<a href="index.html">Dashboard</a></li> </div>
+    <div> <li class="py-3  pr-8 px-10 pt-4 text-xl   font-semibold hover:bg-blue-100"> <i class="fa fa-graduation-cap  pr-2 " aria-hidden="true"></i><a href="#">Admission</a></li></div>
+      <div><li class="py-3 pr-6 pt-4 px-10   text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-male fa-x pr-3" aria-hidden="true"></i><a href="#" class="pl-3">Students</a></li></div>
+    
+    <div> <li class=" pl-10 py-3 pt-4 text-xl font-semibold hover:bg-blue-100"><i class="fa fa-credit-card pr-3" aria-hidden="true"></i><a href="#">Fees & Payments</a></li></div>
+    <div> <li class="py-3  pr-8  pt-4 text-xl px-10 font-semibold hover:bg-blue-100"><a href="#"> <i class="fa fa-book pr-3" aria-hidden="true"></i>Time Table</a></li></div>
+      <div><div class="flex justify-between items-center px-3  hover:bg-blue-100 hover:dropdown " onclick="dropdown()" >
+                        <div >
+                            <li class="  py-4  items-center font-medium rounded-bl-md"><a class="flex items-center" href="#"
+                                    target="_blank">
+                                    <div><img src="icon2.png" class="h-10 w-12 ml-3"></div>
+                                    <div colass="flex w-full items-center ml-1  "><span class="text-xl font-semibold">Quiz</span>
+                                    </div>
+                                </a>
+                        </div>
+                        <span class="text-sm rotate-180" id="arrow"><i class="fa fa-angle-down"></i></span>
+                        </li>
+                    </div>
+                    <div class="text-sm text-left font-thin mt-2 w-4/5 mx-auto" id="submenu">
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9" >  <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a  href="add question.html" target="_blank">Add Question</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9"> <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a href="question.html"  target="_blank"> Question list</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9"> <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a  href="create quiz.html"  target="_blank">Create Quiz</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9"> <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a   href="Schedule quiz.html"  target="_blank">  Schudule quiz
+                       </a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-blue-200 rounded-md mt-1 px-9"> <i class="fa fa-bars    fa-x mt-1 " aria-hidden="true"></i> <a href="start.html"  target="_blank">Start quiz</a></h1>
+                       <script type="text/javascript">
+                function dropdown(){
+                    document.querySelector('#submenu').classList.toggle('hidden');
+                    document.querySelector('#arrow').classList.toggle('rotate-0');
+                }
+                 dropdown()
+            </script>
+                        </div>
+                      </div>
+      </li>
+      <div> <li class="px-10 py-3 pr-20 pt-4 text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-pencil-square-o pr-3" aria-hidden="true"></i><a href="#">Results</a></li></div>
+    
+    <div> <li class="px-10 py-3 pr-8 pt-4 text-xl  font-semibold hover:bg-blue-100"><i class="fa fa-users pr-3" aria-hidden="true"></i><a href="#">Departments</a></li></div>
+    <div> <li class="px-10 py-3 pr-6 pt-4 text-xl font-semibold hover:bg-blue-100"><i class="fa fa-commenting-o pr-3" aria-hidden="true"></i><a href="#">Notifications</a></li></div>
+      <div><li class="px-10 pr-20 py-3 pt-4 text-xl font-semibold hover:bg-blue-100"><i class="fa fa-cog pr-3" aria-hidden="true"></i><a href="#">Settings</a></li></div>
+    </ul>
+    </div>
+    </div>
+  
+  <main class=" w-screen h-screen">
+    <div>
+    <div class="text-4xl font-semibold  mt-5 text-center ">Start Quiz</div>
+   <div class="flex">
+    <div>
+    <div class="w-[530px] h-[550px] border-2 mt-10   shadow-md border-inherit ml-12 bg-white rounded-2xl">
+      <div class="h-20 w-5/6 border-2 mt-9 ml-10 bg-white shadow-md border-inherit rounded-2xl font-semibold text-xl pt-5 pl-2">Q1. Which is the largest country in the world ?</div>
+      <div class="h-12 w-96 bg-white shadow-md border-inherit rounded-2xl mt-10 border-2 ml-16 font-semibold text-xl text-center pt-1">Russia</div>
+      <div class="h-12 w-96 bg-white shadow-md border-inherit rounded-2xl mt-7 border-2 ml-16 font-semibold text-xl text-center pt-1">China</div>
+      <div class="h-12 w-96 bg-white shadow-md border-inherit rounded-2xl mt-7 border-2 ml-16 font-semibold text-xl text-center pt-1">India</div>
+      <div class="h-12 w-96 bg-white shadow-md border-inherit rounded-2xl mt-7 border-2 ml-16 font-semibold text-xl text-center pt-1">Japan</div>
+     <div class="flex justify-evenly mt-10">
+      <div> <button class="h-10 w-24 border- bg-orange-500 hover:bg-orange-700 text-white font-bold py-1 px-4 rounded-md">Previous</button></div>
+      
+       <div> <button class="h-10 w-24 border- bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-4 rounded-md">Save</button></div>
+       <div> <button class="h-10 w-24 border- bg-indigo-500  hover:bg-indigo-600 text-white font-bold py-1 px-4 rounded-md">Next</button></div>
+    </div>
+  </div>
+</div>
+
+  <div class="ml-16">
+    <div class="font-semibold text-xl mt-20">Question Numbers Here</div>
+    <div class=" mt-1">
+      <table class="bg-gray-100 border-2 border-black">
+        <thead>
+          <tr>
+            <td  class="px-6 py-2 border-2 border-black">1</td>
+            <td class="px-6 py-2 border-2 border-black">2</td>
+            <td class="px-6 py-2 border-2 border-black">3</td>
+            <td class="px-6 py-2 border-2 border-black">4</td>
+
+          </tr>
+          <tr>
+                      <td class="px-6 py-2 border-2 border-black">5</td>
+                      <td class="px-6 py-2 border-2 border-black">6</td>
+                      <td class="px-6 py-2 border-2 border-black">7</td>
+                      <td class="px-6 py-2 border-2 border-black">8</td>
+                    </tr>
+                       <tr>
+                      <td class="px-6 py-2 border-2 border-black">9</td>
+                      <td class="px-6 py-2 border-2 border-black" >10</td>
+                      <td class="px-6 py-2 border-2 border-black">11</td>
+                      <td class="px-6 py-2 border-2 border-black">12</td>
+                    </tr>
+                       <tr>
+                      <td class="px-6 py-2 border-2 border-black">13</td>
+                      <td class="px-6 py-2 border-2 border-black">14</td>
+                      <td class="px-6 py-2 border-2 border-black">15</td>
+                      <td class="px-6 py-2 border-2 border-black">16</td>
+                    </tr>
+                       <tr>
+                      <td class="px-6 py-2 border-2 border-black">17</td>
+                      <td class="px-6 py-2 border-2  border-black">18</td>
+                      <td class="px-6 py-2 border-2 border-black">19</td>
+                      <td class="px-6 py-2 border-2 border-black">20</td>
+                    </tr>
+                     <tr>
+                    
+        </thead>
+      </table>
+    </div>
+    <div class="h-24 w-64 border-2 mt-7 ml-3 bg-white  font-semibold text-xl pt-8 pl-4 border-black"> Time:-
+    3:00 Hours </div>
+    <div>
+       <button class=" ml-20 mt-16 h-10 w-32 border-blue-500 border-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">Submit</button>
+    </div>
+  </div>
+</div>
+  </main>
+</body>
+  </html>
